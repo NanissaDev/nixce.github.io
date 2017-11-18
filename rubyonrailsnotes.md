@@ -1,4 +1,5 @@
 # Notes from Tutorial
+Tutorials from https://youtu.be/0Vfk8jk6S90?list=PLgYiyoyNPrv81SdYk-eoMFacl-CJTO_xa <hr>
 Scaffold vs. Manual <br>
 Better to use generators than to use scaffolds 
 
