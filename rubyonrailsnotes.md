@@ -52,15 +52,27 @@ This also generates the corresponding routes
 
 Rails.application.routes.draw do <br>
 
-  get 'pages/home'<br>
+  get 'pages/home' (this was the default generated leading to localhost:3000/pages/home) <br>
 
-  get "about", to: "pages#about"<br>
+  get "about", to: "pages#about" (this edited to lead to localhost:3000/about) <br> 
 
-  get "contact", to: "pages#contact"<br>
+  get "contact", to: "pages#contact" (this edited to lead to localhost:3000/contact) <br>
 
 end<br>
 
+class PagesController < ApplicationController
+  def contact
+  end
 
+  def about
+  end
+
+  def home
+  end
+end
+
+
+_root 'pages#home'_ in routes file defines the root directory to point to the page Home created. 
 
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](https://nixce.com)
