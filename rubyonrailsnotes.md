@@ -45,5 +45,22 @@ _//> c = Campaign.find(5)_ [Hit Enter/Return key]<br><br>
 Assuming I would like to find data multiple ids in an array, I could use <br>
 _//> Campaign.find([2,4,5,9])_ [Hit Enter/Return key]<br>
 
+# Creating Controllers and working with routes <br>
+create controller for pages and generating some pages such as about contact home <br>
+Using _rails g controller Pages about contact home <br>
+This also generates the corresponding routes
+
+Rails.application.routes.draw do <br>
+
+  get 'pages/home'<br>
+
+  get "about", to: "pages#about"<br>
+
+  get "contact", to: "pages#contact"<br>
+
+end<br>
+
+
+
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](https://nixce.com)
